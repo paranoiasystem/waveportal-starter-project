@@ -1,8 +1,10 @@
-import * as React from "react";
+import React, { useEffect, useState } from "react";
 import { ethers } from "ethers";
 import './App.css';
 
 export default function App() {
+
+  const [currentAccount, setCurrentAccount] = useState("");
 
   const checkIfWalletIsConnected = async () => {
     try {

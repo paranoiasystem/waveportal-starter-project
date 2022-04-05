@@ -4,7 +4,7 @@ import './App.css';
 
 export default function App() {
 
-  const checkIfWalletIsConnected = () => {
+  const checkIfWalletIsConnected = async () => {
     try {
       /*
       * First make sure we have access to window.ethereum
